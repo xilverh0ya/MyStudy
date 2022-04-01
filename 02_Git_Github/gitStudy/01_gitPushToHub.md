@@ -1,8 +1,8 @@
 # 1. 초기 설정
   
-```cmd
-git config --global user.name "YOUR GITHUB NAME"
-git config --global user.email "GITHUB E-MAIL"
+```bash
+$ git config --global user.name "YOUR GITHUB NAME"
+$ git config --global user.email "GITHUB E-MAIL"
 ```
 
 # 2. 로컬 저장소와 깃 생성
@@ -12,19 +12,19 @@ git config --global user.email "GITHUB E-MAIL"
 1) 로컬저장소 생성 / 이동  
   
    로컬저장소 생성
-   ```cmd
-   mkdir (Directory Address)
+   ```bash
+   $ mkdir (Directory Address)
    ```
   
    로컬저장소 이동
-   ```cmd
-   cd (Directory Address)
+   ```bash
+   $ cd (Directory Address)
    ```
   
 
 2) Git 생성(Git 초기화)
-   ```cmd
-   git init
+   ```bash
+   $ git init
    ```
    이 명령은 .git 이라는 하위 디렉토리를 생성.  
    .git 디렉토리에는 저장소에 필요한 뼈대 파일(Skeleton)이 들어있다.  
@@ -32,19 +32,19 @@ git config --global user.email "GITHUB E-MAIL"
 
 # 3. 업로드 할 파일 준비
 1) 파일 상태 확인
-   ```cmd
-   git status
+   ```bash
+   $ git status
    ```
    수정된 파일이 있는지, 작업 내역 없이 깨끗한 디렉토리인지 등, 파일의 상태를 볼 수 있는 명령어
 
 2) Staging Area에 파일 올리기
-   ```cmd
-   git add (File Name)
+   ```bash
+   $ git add (File Name)
    ```
    git add 뒤에 스테이지에 올릴 파일 이름을 적는다.
      
    <git add 관련 명령어>
-   ```cmd
+   ```bash
    git add : 가장 기초적, rm 명령으로 제거된 파일은 add 명령어에 포함되지 않음.
 
    git add --all
@@ -55,40 +55,47 @@ git config --global user.email "GITHUB E-MAIL"
 
    git add -A : 새로 만든 것, 수정, 삭제 등 모든 변경된 파일을 add 해준다.
    ```
-  
+<br>
+
 3) 커밋하기
-   ```cmd
-   git commit -m "Message"
+   
+   ```bash
+   $git commit -m "Message"
    ```
+
    보통 메세지에는 몇 번째 커밋인지 적는다.  
    ex) "First commit"
 
 # 4. Github에 push 하기
 1) 원격저장소 확인
-   ```cmd
-   git remote -v
+   
+   ```bash
+   $git remote -v
    ```
+
    혹시 이전에 원격저장소를 연결한 경우가 있다면, 원격저장소가 있는지 이 명령어로 확인한다.  
    -v는 더 상세하게 알아보고 싶을 때 덧붙인다.
 
 2) 원격저장소 제거
-   ```cmd
-   git remote remove (Existing remote repository alias)
+   
+   ```bash
+   $git remote remove (Existing remote repository alias)
    ```
+
    ex) git remote remove origin  
    기존의 원격 저장소를 삭제하고 싶다면 예시를 입력해보자.  
    origin은 자동으로 등록되는 원격저장소 이름이다.
 
 3) 원격저장소 추가
-   ```git
-   git remote add (Github repository address)
+   ```bash
+   $git remote add (Github repository address)
    ```
    ex) git remote add origin git@github.com/xilverh0ya/Mystudy.git  
    단축이름은 origin 말고 다른 이름도 가능하다.
    
 4) 원격저장소에 push하기
-   ```cmd
-   git push (Remote repository alias) (Branch name)
+   ```bash
+   $git push (Remote repository alias) (Branch name)
    ```
    ex) git push origin master
 
