@@ -116,7 +116,7 @@ select *
  use mywork;
  desc box_office;
 
--- box_office table : 2004~2019년까지 개봉된 영화 정보
+/* (테이블) box_office table : 2004~2019년까지 개봉된 영화 정보
 
 -- seq_no : 일련번호, 기본키
 -- years : 제작연도
@@ -134,3 +134,4 @@ select *
 -- movie_type : 유형(장편, 단편, ...)
 -- genre : 장르(스릴러, 액션..)
 -- director : 감독
+*/
