@@ -60,7 +60,7 @@ $ git config --global user.email "GITHUB E-MAIL"
 3) 커밋하기
    
    ```bash
-   $git commit -m "Message"
+   $ git commit -m "Message"
    ```
 
    보통 메세지에는 몇 번째 커밋인지 적는다.  
@@ -70,7 +70,7 @@ $ git config --global user.email "GITHUB E-MAIL"
 1) 원격저장소 확인
    
    ```bash
-   $git remote -v
+   $ git remote -v
    ```
 
    혹시 이전에 원격저장소를 연결한 경우가 있다면, 원격저장소가 있는지 이 명령어로 확인한다.  
@@ -79,7 +79,7 @@ $ git config --global user.email "GITHUB E-MAIL"
 2) 원격저장소 제거
    
    ```bash
-   $git remote remove (Existing remote repository alias)
+   $ git remote remove (Existing remote repository alias)
    ```
 
    ex) git remote remove origin  
@@ -88,14 +88,14 @@ $ git config --global user.email "GITHUB E-MAIL"
 
 3) 원격저장소 추가
    ```bash
-   $git remote add (Github repository address)
+   $ git remote add (Github repository address)
    ```
    ex) git remote add origin git@github.com/xilverh0ya/Mystudy.git  
    단축이름은 origin 말고 다른 이름도 가능하다.
    
 4) 원격저장소에 push하기
    ```bash
-   $git push (Remote repository alias) (Branch name)
+   $ git push (Remote repository alias) (Branch name)
    ```
    ex) git push origin master
 
