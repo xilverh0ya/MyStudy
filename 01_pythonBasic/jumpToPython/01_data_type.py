@@ -20,7 +20,7 @@ a = "Hello world"
 print(type(a))
 
 a = "Python's favrite food is perl"  # 문장부호의 중복 조심
-a = "Python's favrite food is perl"  # 이스케이핑 문자 사용
+a = "Python\'s favrite food is perl"  # 이스케이핑 문자 사용
 
 print(a)
 
