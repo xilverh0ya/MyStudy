@@ -1,0 +1,9 @@
+[참고 자료]
+
+[코드 분석 스터디] Porto Seguro's Safe Driver Prediction 캐글 커널 필사 : https://kubig-2021-2.tistory.com/38
+
+결측값의 개념, 결측값이 미치는 영향 : https://gooopy.tistory.com/42
+결측치 처리 7가지 방법 : https://daebaq27.tistory.com/43
+불균형 데이터 처리를 위한 샘플링 기법 : https://casa-de-feel.tistory.com/15
+데이터 불균형 문제를 대하는 법 - Sampling 방법론 : https://chealin93.tistory.com/122
+파이썬으로 표본 추출하기 : https://lovelydiary.tistory.com/410
