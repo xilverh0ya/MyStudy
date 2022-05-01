@@ -1,0 +1,33 @@
+texts = [7,6,5,4,3,2,1]
+fontFace = cv2.FONT_HERSHEY_TRIPLEX
+fontScale = 2.0
+thinkness = 1
+colors = {7:(0,0,255),6:(0,94,255),5:(0,228,255),4:(0,147,0),
+          3:(255,0,1),2:(111,0,0),1:(225,18,113)}
+
+sizeText, _ = cv2.getTextSize(str(texts[0]), fontFace, fontScale, thinkness)
+org = (img.shape[1] - sizeText[0])//2, (img.shape[0] + sizeText[1])//2
+
+# 비디오 설정
+fourcc = cv2.VideoWriter_fourcc(*'DIVX')
+w, h = (650, 650)
+fps = 0.8
+outputVideo = cv2.VideoWriter('./out/count.avi', fourcc, fps, (w, h))
+
+for text in texts:
+    img = np.full((w, h, 3), -1, np.uint8)
+    sizeText, _ = cv2.getTextSize(str(text), fontFace, fontScale, thinkness)
+    org = (img.shape[1])//2, (img.shape[0])//2
+    cv2.putText(img, str(text), (org[0]-(10*text),org[1]+(10*text)),
+                fontFace, text, colors[text], thinkness, cv2.LINE_AA)
+    cv2.circle(img, org, sizeText[0]*text, colors[text], 5, cv2.LINE_AA)
+    outputVideo.write(img)
+    cv2.imshow('img', img)
+    if cv2.waitKey(500) == 27 :
+        print('강제 종료')
+        cv2.destroyAllWindows() # esc 사용시 강제 종료
+        break
+
+if text == 1 :
+    outputVideo.release()
+    cv2.destroyAllWindows() # 자동종료
