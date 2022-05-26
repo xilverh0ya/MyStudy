@@ -1,17 +1,3 @@
-제목 : Chest X-Ray Images (Pneumonia)
-설명 : 흉부 엑스선 이미지를 기반으로 정상인지 폐렴인지를 판단
-링크 : https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
-문제 유형 : 이진 분류
-성능 측정 : F1 Score
-
-제목 : Plant Pathology 2020 - FGVC7
-설명 : 잎사귀 사진을 보고 잎사귀가 어떤 질병에 걸렸는지 식별
-링크 : https://www.kaggle.com/competitions/plant-pathology-2020-fgvc7
-문제 유형 : 다중 분류
-성능 측정 : ROC AUC
-
-제목 : Facial Keypoints Detection
-설명 : 얼굴의 특징점(keypoints) 예측
-링크 : https://www.kaggle.com/competitions/facial-keypoints-detection/
-문제 유형 : 수치 예측
-성능 측정 : RMSE
+version https://git-lfs.github.com/spec/v1
+oid sha256:64952f493109b8fd92fccdd8d8836e53c0e495e8650bb020f72664070ae1a814
+size 739

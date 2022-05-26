@@ -1,5 +1,3 @@
-numpy==1.17.4
-pandas==0.25.3
-jupyter==1.0.0
-jupyterthemes==0.20.0
-mdutils==1.0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:d205687adef4cf5a83e245bbce5df629587fd909bc640f57b0dafe828d39dc8f
+size 86

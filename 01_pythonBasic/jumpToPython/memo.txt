@@ -1,1 +1,3 @@
-Life is too short
+version https://git-lfs.github.com/spec/v1
+oid sha256:066c6d7a79d6a184bb9ef488437be1e3be3cda7f39470fa6b6827ff6d2e30617
+size 19

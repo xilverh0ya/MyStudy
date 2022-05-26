@@ -1,2 +1,3 @@
-Life	is	too	short
-You	need	python
+version https://git-lfs.github.com/spec/v1
+oid sha256:6446bf6eddd311e6b8c363ea7e9298666eda706a99fad741f0f86e57e05c60b1
+size 34
