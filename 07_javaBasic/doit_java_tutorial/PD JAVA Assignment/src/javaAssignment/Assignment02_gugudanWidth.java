@@ -1,4 +1,4 @@
-package hello;
+package javaAssignment;
 
 public class Assignment02_gugudanWidth {
 

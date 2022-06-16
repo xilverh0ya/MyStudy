@@ -1,4 +1,4 @@
-package hello;
+package javaAssignment;
 
 import java.util.Scanner;
 
