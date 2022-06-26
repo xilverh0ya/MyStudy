@@ -1,0 +1,25 @@
+CREATE TABLE Member(
+	mID 	VARCHAR(50) PRIMARY KEY			,
+	mPW 	INT NOT NULL					,
+	mTYPE 	BOOLEAN default false NOT NULL	,
+	mNAME 	VARCHAR(50)
+);
+
+CREATE TABLE Stock(
+sID INT PRIMARY KEY			,     
+sNAME VARCHAR(50) NOT NULL	,
+sQTY INT NOT NULL			,
+sPRICE INT NOT NULL
+);
+
+CREATE TABLE Cart(
+	cNUM	INT		PRIMARY KEY AUTO_INCREMENT	,
+    cmID	VARCHAR(50)							,
+    csID	INT									,
+	FOREIGN KEY(cmID) REFERENCES Member (mID)	,
+	FOREIGN KEY(csID) REFERENCES Stock (sID)	,
+    cNAME	VARCHAR(50)							,
+    cQTY	INT									,
+    cPRICE	INT									,
+    cSTATUS	BOOLEAN default false NOT NULL
+);
